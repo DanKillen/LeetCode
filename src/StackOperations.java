@@ -11,12 +11,9 @@
  * Invalidate the previous score, removing it from the record.
  **/
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Stack;
 
-public class calPoints
+public class StackOperations
 {
    static String[] operations1 = {"5","-2","4","C","D","9","+","+"};
 

@@ -6,7 +6,7 @@ import java.util.Arrays;
  *
  * Return the array in the form [x1,y1,x2,y2,...,xn,yn].
  **/
-public class shuffleTheArray
+public class ArrayShuffler
 {
    static int[] nums = {1, 1, 2, 2};
    static int n = 2;

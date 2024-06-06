@@ -1,4 +1,4 @@
-public class mergeTwoSortedLists
+public class ListMerger
 {
 
    public static void main(String args[])

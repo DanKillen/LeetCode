@@ -1,5 +1,3 @@
-import java.util.List;
-
 /**
  * Created by Daniel Killen on 04/05/2024
  * Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
@@ -10,7 +8,7 @@ import java.util.List;
  * Open brackets must be closed in the correct order.
  * Every close bracket has a corresponding open bracket of the same type.
  **/
-public class validParentheses
+public class ParenthesesChecker
 {
 
    public static void main(String args[])

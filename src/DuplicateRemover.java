@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -8,7 +6,7 @@ import java.util.Set;
  Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once.
  The relative order of the elements should be kept the same. Then return the number of unique elements in nums.
  **/
-public class removeDuplicate
+public class DuplicateRemover
 {
    static int[] nums = {1,2,3,1};
    static int[] nums2 = {1,2,3,4};

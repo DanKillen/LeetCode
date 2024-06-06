@@ -1,13 +1,11 @@
 import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
 
 /**
  * Created by Daniel Killen on 12/05/2024
  * An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase,
  * typically using all the original letters exactly once.
  **/
-public class isAnagram
+public class AnagramChecker
 {
 
    public static void main(String args[])

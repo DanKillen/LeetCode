@@ -13,7 +13,7 @@ import java.util.Arrays;
  *
  * string convert(string s, int numRows);
  **/
-public class zigzagConversion
+public class ConversionZigzag
 {
 
    public static void main(String args[])

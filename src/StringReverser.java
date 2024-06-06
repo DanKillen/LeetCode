@@ -1,10 +1,8 @@
-import java.util.Arrays;
-
 /**
  * Created by Daniel Killen on 12/05/2024
  * A simple function to reverse a string
  **/
-public class reverseString
+public class StringReverser
 {
 
    public static void main(String args[])

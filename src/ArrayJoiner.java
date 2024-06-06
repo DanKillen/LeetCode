@@ -6,11 +6,9 @@
  * Return the array ans.
  **/
 
-import org.junit.Assert;
-
 import java.util.Arrays;
 
-public class concatenationOfArray
+public class ArrayJoiner
 {
    static int[] nums = {1,2,1};
 
