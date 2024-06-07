@@ -13,7 +13,6 @@
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Stack;
 
 public class LinkedListReverser
 {
@@ -31,7 +30,7 @@ public class LinkedListReverser
    public static ListNode reverseList(ListNode head) {
       if (head == null || head.next == null)
       {
-         return null;
+         return head;
       }
       List<ListNode> listNodes = new ArrayList<>();
       ListNode traversalNode = head;
@@ -43,10 +42,10 @@ public class LinkedListReverser
       }
       for (int i = listNodes.size() - 1; i > 0; i--)
       {
-         traversalNode.next = listNodes.get(i);
-         traversalNode = listNodes.get(i);
+         traversalNode.next = listNodes.get(i - 1);
+         traversalNode = listNodes.get(i - 1);
       }
       traversalNode.next = null;
-      return traversalNode;
+      return listNodes.getLast();
    }
 }
