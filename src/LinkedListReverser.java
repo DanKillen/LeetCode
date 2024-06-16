@@ -1,5 +1,5 @@
 /**
- * Created by Daniel Killen on 27/05/2024
+ * Created by Daniel Killen on 07/06/2024
  * You are given a list of strings operations, where operations[i] is the ith operation you must apply to the record and is one of the following:
  * An integer x.
  * Record a new score of x.
@@ -46,6 +46,6 @@ public class LinkedListReverser
          traversalNode = listNodes.get(i - 1);
       }
       traversalNode.next = null;
-      return listNodes.getLast();
+      return listNodes.get(listNodes.size() - 1);
    }
 }

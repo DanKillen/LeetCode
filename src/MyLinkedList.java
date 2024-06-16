@@ -8,23 +8,16 @@ class MyLinkedList {
     }
 
     public int get(int index) {
-        if (index == 0)
-        {
-            return head.val;
+        if (index < 0 || index >= length) {
+            return -1;
         }
-        if (index == length)
-        {
-            return tail.val;
+        ListNode traversalNode = head;
+        for (int i = 0; i < index; i++) {
+            traversalNode = traversalNode.next;
         }
-        if (index < length) {
-            ListNode traversalNode = head;
-            for (int i = 0; i < index; i++) {
-                traversalNode = traversalNode.next;
-            }
-            return traversalNode.val;
-        }
-        return -1;
+        return traversalNode.val;
     }
+
 
     public void addAtHead(int val) {
         ListNode newHead = new ListNode(val);
@@ -64,26 +57,24 @@ class MyLinkedList {
     }
 
     public void deleteAtIndex(int index) {
-        if (index == 0)
-        {
-            if (length == 1)
-            {
-                head = null;
+        if (index < 0 || index >= length) {
+            return;
+        }
+        if (index == 0) {
+            head = head.next;
+            if (length == 1) {
                 tail = null;
             }
-            else
-            {
-                head = head.next;
-            }
-            length--;
-        }
-        else if (index <= length) {
+        } else {
             ListNode traversalNode = head;
-            for (int i = 1; i < index; i++) {
+            for (int i = 0; i < index - 1; i++) {
                 traversalNode = traversalNode.next;
             }
             traversalNode.next = traversalNode.next.next;
-            length--;
+            if (index == length - 1) {
+                tail = traversalNode;
+            }
         }
+        length--;
     }
 }
