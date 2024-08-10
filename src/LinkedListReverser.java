@@ -1,14 +1,6 @@
 /**
  * Created by Daniel Killen on 07/06/2024
- * You are given a list of strings operations, where operations[i] is the ith operation you must apply to the record and is one of the following:
- * An integer x.
- * Record a new score of x.
- * '+'.
- * Record a new score that is the sum of the previous two scores.
- * 'D'.
- * Record a new score that is the double of the previous score.
- * 'C'.
- * Invalidate the previous score, removing it from the record.
+ * Given the head of a singly linked list, reverse the list, and return the reversed list.
  **/
 
 import java.util.ArrayList;
@@ -24,7 +16,7 @@ public class LinkedListReverser
       ListNode listNode3 = new ListNode(3, listNode4);
       ListNode listNode2 = new ListNode(2, listNode3);
       ListNode listNode1 = new ListNode(1, listNode2);
-      System.out.println(reverseList(listNode1));
+      System.out.println(reverseListRecursion(listNode1));
    }
 
    public static ListNode reverseList(ListNode head) {
@@ -47,5 +39,14 @@ public class LinkedListReverser
       }
       traversalNode.next = null;
       return listNodes.get(listNodes.size() - 1);
+   }
+
+   public static ListNode reverseListRecursion(ListNode head) {
+      if(head == null || head.next == null) return head;
+      ListNode prev = null;
+      ListNode h2 = reverseList(head.next);
+      head.next.next = head;
+      head.next=prev;
+      return h2;
    }
 }

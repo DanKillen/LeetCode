@@ -15,6 +15,11 @@ public class FibonacciNumber
       System.out.println(fib(2));
       System.out.println(fib(3));
       System.out.println(fib(4));
+      System.out.println(fib(10));
+      System.out.println(recursiveFib(2));
+      System.out.println(recursiveFib(3));
+      System.out.println(recursiveFib(4));
+      System.out.println(recursiveFib(10));
    }
    public static int fib(int n) {
       if (n == 0 || n == 1)
@@ -31,5 +36,13 @@ public class FibonacciNumber
          current = fib;
       }
       return fib;
+   }
+
+   public static int recursiveFib(int n) {
+      if (n <= 1)
+      {
+         return n;
+      }
+      return recursiveFib(n-1) + recursiveFib(n-2);
    }
 }
