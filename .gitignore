@@ -1,1 +1,17 @@
-/out/
+# Build output
+out/
+build/
+target/
+*.class
+
+# IntelliJ / editor files
+.idea/
+*.iml
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
