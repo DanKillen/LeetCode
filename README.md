@@ -18,7 +18,7 @@ This repo is partly a record of solved problems and partly a reference list for 
 | ✅ | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | `src/AnagramChecker.java` |
 | ✅ | [Concatenation of Array](https://leetcode.com/problems/concatenation-of-array/) | `src/ArrayJoiner.java` |
 | ✅ | [Shuffle the Array](https://leetcode.com/problems/shuffle-the-array/) | `src/ArrayShuffler.java` |
-| 🟨 | [Sort an Array](https://leetcode.com/problems/sort-an-array/) | `src/ArraySorter.java` — insertion-sort attempt; useful practice, but not optimal for the LeetCode constraints |
+| ✅ | [Sort an Array](https://leetcode.com/problems/sort-an-array/) | `src/ArraySorter.java` |
 | ✅ | [Design Browser History](https://leetcode.com/problems/design-browser-history/) | `src/BrowserHistory.java` |
 | ✅ | [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/) | `src/ConversionZigzag.java` |
 | ✅ | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | `src/DuplicateChecker.java` |
