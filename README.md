@@ -1,3 +1,22 @@
+# LeetCode Practice
+
+A collection of LeetCode problem solutions completed as part of ongoing algorithm and data-structure practice.
+
+This repository is mainly used for practising problem-solving, improving fluency with core programming patterns, and revisiting common interview-style questions.
+
+## Focus areas
+
+- Arrays and strings
+- Hash maps and sets
+- Recursion
+- Sorting and searching
+- Basic dynamic programming
+- Big O reasoning
+
+## Notes
+
+This is a practice repository rather than a production application. My current commercial work is in private repositories, so this repo is included as a public record of ongoing problem-solving practice.
+
 ### Directory: 03 STATIC ARRAYS
 
 - [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
